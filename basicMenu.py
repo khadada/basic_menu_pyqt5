@@ -33,6 +33,12 @@ class BasicMenu(QMainWindow):
         # Create file menu and add actions:
         file_menu = menu_bar.addMenu('File')
         file_menu.addAction(exit_action)
+
+# Run Program:
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = BasicMenu()
+    sys.exit(app.exec_())
         
         
         
