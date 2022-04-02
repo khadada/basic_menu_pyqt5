@@ -1,0 +1,38 @@
+Expanation:
+-----------
+The framework for this program contains no widgets. but does show ho to setup a simple File menu located in the top-left corner of the GUI. Take a loo at the beginning of the program and notice the classes begin imported from QWidgets. We still import QApplication, but there are also two new classes. QMainWindow and QAction. You may also notice that this time there is no QWidget class.
+
+	The QMainWindow class provides the necessary tools for building an application's graphic user interface. Notice tha the BasicMenu class in the preceding code is is written as :
+	class BasicMenu(QMainWindow)
+
+The class to build our window inherit from QMainWindow instead of QWidgets.
+
+QMainWindow vs. QWidget:
+The QMainWindow class focuses on creating and managing the layout for the main window of an application. It allows tyou to setup a window with status bar ,toolbar, dock widgets, or other menu options in predefined places all designed around functions that the main should have.
+
+The QWidget class is the base for all user interface objects in Qt. The widget is the basic building block of GUIs. It is interactive, allowing the user to communicate with computer to perform some task. Many of the widgets you have already looked functionality to your programs.
+
+	A window in an application is really just a widget that is not embedded in a parent widget. What is important to understand is that QMainWindow actually inherits from the QWiget class. It is special purpose class focusing mainly on creating menus and housing widgets in your program. In figure below you can see the different widgets that QMainWindow can use have areas specifically assigned for them. Take a look at the inside of the main window.
+
+	The central widget in the center of the window must be set if you are going to use MainWindow as your base class. For example you could use single QTextEdit widget or create a QWidget object to act as a parent to number of other widgets then use setCentralWidget(), and set your central widget for the main window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
